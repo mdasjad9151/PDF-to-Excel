@@ -4,3 +4,5 @@ Scripts/
 CACHEDIR.TAG
 pyvenv.cfg
 .env
+Assignment/input
+Assignment/reports
