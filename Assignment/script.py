@@ -45,7 +45,14 @@ def extract_patient_name(text):
 def ask_gemini_for_table(text):
     prompt = f"""
 You are a medical assistant. Below is a pathology report text from a PDF. Extract a table with the following columns:
-[Test Name, Value, Units, Reference Range]. Only include medical test results. Don't include any headers or extra info.
+[Test Name, Value, Units, Reference Range].
+
+Guidelines:
+- For each test, identify the main numerical result (exclude percentages in parentheses).
+- Extract the correct unit (e.g., "(41.50%)x 10^9/L) Extract it complete  e.g., 41.50%)x 10^9/L".
+- Do not include interpretation symbols like *, --, etc.
+- Reference range should be captured accurately.
+- No extra commentary, just the table.
 
 Report:
 {text}
