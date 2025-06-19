@@ -56,6 +56,6 @@ input/sample PDF.pdf
 ### Run script.py
 
 ```bash
-python main.py
+python script.py
 
 ```
