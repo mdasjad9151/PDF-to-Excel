@@ -16,8 +16,7 @@ This project uses the **Google Gemini API (via `google.genai.Client`)** to intel
 
 ##  Project Structure
 
-'''
-
+```
 pdf-to-excel/
     ├── readme.md
     ├── requirements.txt
@@ -27,8 +26,7 @@ pdf-to-excel/
         └── reports/
             ├── Lynne_Christine_Evans.xlsx
             └── Test_Patient.xlsx
-'''
-
+```
 
 ---
 
@@ -39,25 +37,25 @@ pdf-to-excel/
 ```bash
 pip install -r requirements.txt
 
-'''
+```
 ### 2.  Set Up API Key
 Create a .env file with your Gemini API key:
 
-'''
+```
 GEMINI_API_KEY=your_actual_api_key_here
-'''
+```
 
 ### 3. Add Your PDF
 Place your PDF report (with multiple patient entries) into the input/ folder, for example:
 
-'''
+```
 input/sample PDF.pdf
 
-'''
+```
 
 ### Run script.py
 
-'''bash
+```bash
 python main.py
 
-'''
+```
